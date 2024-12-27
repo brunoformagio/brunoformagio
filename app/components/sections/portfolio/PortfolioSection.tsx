@@ -14,7 +14,6 @@ interface PortfolioProps {
 }
 
 export default function PortfolioSection() {
-    const { resolvedTheme } = useTheme();
     const { language } = useMainContext();
 
     const LINKS: PortfolioProps[] = [

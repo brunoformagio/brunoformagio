@@ -10,7 +10,7 @@ export const LanguageSelector = () => {
     }, [language]);
     
 
-    return <select className="bg-transparent px-[1vw] lg:px-0 py-[0.1vw]  h-[7.5vw] lg:h-[2vw] text-[2.5vw] lg:text-[1vw] flex items-center justify-center gap-[0.6vw] rounded-full" value={language} onChange={(e) => setLanguage(e.target.value)}>
+    return <select className="bg-transparent px-[1vw] lg:px-0 py-[0.1vw]  h-[7.5vw] lg:h-[2vw] text-[4.5vw] lg:text-[1vw] flex items-center justify-center gap-[0.6vw] rounded-full" value={language} onChange={(e) => setLanguage(e.target.value)}>
         <option value="en-US">en-US</option>
         <option value="pt-BR">pt-BR</option>
     </select>

@@ -36,7 +36,6 @@ export const Header = () => {
 
     //detect section on section state change and scroll
     useEffect(() => {
-        if(mobileMode) return;
         smoothScroll(section);
     }, [section]);
 

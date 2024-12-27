@@ -9,22 +9,22 @@ const TIMELINE_ITEMS: TimelineItemProps[] = [
         "legend": "2023 - Present",
         "titleEn": "Tech Lead (Frontend)  • Bren (AI Startup)",
         "titleBr": "Tech Lead (Frontend)  • Bren (Startup de IA)",
-        "descriptionEn": "Led the development of the company's AI-driven landing page, overseeing frontend architecture and mentoring a small team of frontend developers and a UX designer.\n\nPlanned and executed a scalable frontend structure using Next.js and Tailwind CSS.\n\nOptimized performance, reducing TTFB by 30% and improving LCP by 25%.",
-        "descriptionBr": "Liderou o desenvolvimento da landing page com IA da empresa, supervisionando a arquitetura frontend e orientando uma pequena equipe de desenvolvedores frontend e um designer UX.\n\nPlanejou e executou uma estrutura frontend escalável usando Next.js e Tailwind CSS.\n\nOtimização de desempenho, reduzindo TTFB em 30% e melhorando o LCP em 25%."
+        "descriptionEn": "Led the frontend development of the company's AI platform, planing the architecture and mentoring a small team of developers and a UX designer.\n\nPlanned and executed a scalable frontend structure using Next.js and Tailwind CSS.\n\nOptimized performance, reducing TTFB by 30% and improving LCP by 25%.",
+        "descriptionBr": "Liderou o desenvolvimento frontend da plataforma de IA da empresa, planejando a arquitetura e orientando uma pequena equipe de desenvolvedores e um designer UX.\n\nPlanejou e executou uma estrutura frontend escalável usando Next.js e Tailwind CSS.\n\nOtimização de desempenho, reduzindo TTFB em 30% e melhorando o LCP em 25%.",
     },
     {
         "legend": "2022 - 2023",
         "titleEn": "Frontend Engineer  • FYNT (Crypto RWA Startup)",
         "titleBr": "Frontend Engineer  • FYNT (Startup de Crypto RWA)",
-        "descriptionEn": "Built and launched the company's website from scratch using the latest frontend technologies, including React and Next.js.\n\nCollaborated with backend teams to implement RESTful APIs, ensuring seamless data fetching and dynamic page generation.\n\n.",
-        "descriptionBr": "Construiu e lançou o site da empresa do zero usando as mais recentes tecnologias frontend, incluindo React e Next.js.\n\nColaborou com equipes de backend para implementar APIs RESTful, garantindo a busca de dados e geração de páginas dinâmicas.\n\n."
+        "descriptionEn": "Buil the company's SaaS from scratch using the latest frontend technologies, including React and Next.js.\n\nCollaborated with backend teams to implement RESTful APIs, ensuring seamless data fetching and dynamic page generation.\n\n.",
+        "descriptionBr": "Construiu o SaaS da empresa do zero usando as mais recentes tecnologias frontend, incluindo React e Next.js.\n\nColaborou com equipes de backend para implementar APIs RESTful, garantindo a busca de dados e geração de páginas dinâmicas.\n\n."
     },
     {
         "legend": "2019 - 2022",
         "titleEn": "Co-Founder & Frontend Developer  • Web3 NFT Project",
         "titleBr": "Co-Fundador & Desenvolvedor Frontend  • Projeto NFT Web3",
-        "descriptionEn": "Co-founded and developed a Web3 NFT collection platform during the peak of crypto hype, leveraging Next.js and GraphQL.\n\nDesigned and implemented smart contract interaction UI, leading to the successful minting of over 2,500 NFTs.",
-        "descriptionBr": "Co-fundou e desenvolveu uma plataforma de coleção NFT Web3 durante o auge do hype cripto, usando Next.js e GraphQL.\n\nProjetou e implementou a interface de interação com contratos inteligentes, resultando na cunhagem bem-sucedida de mais de 2.500 NFTs."
+        "descriptionEn": "Co-founded and developed a Web3 NFT collection during the peak of crypto hype, leveraging Next.js and GraphQL.\n\nDesigned and implemented smart contract interaction UI, leading to the successful minting of over 2,500 NFTs.",
+        "descriptionBr": "Co-fundou e desenvolveu uma coleção NFT Web3 durante o auge do hype cripto, usando Next.js e GraphQL.\n\nProjetou e implementou a interface de interação com contratos inteligentes, resultando na cunhagem bem-sucedida de mais de 2.500 NFTs."
     },
     {
         "legend": "2016 - 2018",
@@ -35,16 +35,16 @@ const TIMELINE_ITEMS: TimelineItemProps[] = [
     },
     {
         "legend": "2013 - 2016",
-        "titleEn": "Freelance Web Designer  • Self-Employed",
-        "titleBr": "Designer Web Freelancer  • Autônomo",
-        "descriptionEn": "Operated as a freelance web designer, delivering custom websites and branding for various clients.\n\nEnhanced skills in responsive design, SEO optimization, and client communication.\n\nManaged multiple projects simultaneously, honing time management and problem-solving abilities.",
-        "descriptionBr": "Atuou como designer web freelancer, desenvolvendo sites personalizados e identidades visuais para diversos clientes.\n\nAprimorou habilidades em design responsivo, otimização para SEO e comunicação com clientes.\n\nGerenciou vários projetos simultaneamente, aprimorando habilidades de gestão de tempo e resolução de problemas."
+        "titleEn": "Freelance Web Developer  • Self-Employed",
+        "titleBr": "Desenvolvedor Web Freelancer  • Autônomo",
+        "descriptionEn": "Operated as a freelance web developer and designer, delivering custom websites and branding for various clients.\n\nEnhanced skills in responsive design, SEO optimization, and client communication.\n\nManaged multiple projects simultaneously, honing time management and problem-solving abilities.",
+        "descriptionBr": "Atuou como desenvolvedor e designer freelancer, desenvolvendo sites personalizados e identidades visuais para diversos clientes.\n\nAprimorou habilidades em design responsivo, otimização para SEO e comunicação com clientes.\n\nGerenciou vários projetos simultaneamente, aprimorando habilidades de gestão de tempo e resolução de problemas."
     },
 
     {
         "legend": "2011 - 2013",
-        "titleEn": "Designer  • Aversa (In-House Design Agency)",
-        "titleBr": "Designer  • Aversa (Agência de Design Interna)",
+        "titleEn": "Designer & Web Developer  • Aversa (In-House Design Agency)",
+        "titleBr": "Designer & Web Developer  • Aversa (Agência de Design Interna)",
         "descriptionEn": "Designed advertising materials, printed assets, and maintained the company's website.\n\nGained initial experience with OOP principles applied to JavaScript.\n\nCollaborated with marketing teams to align design strategies with business goals.",
         "descriptionBr": "Desenvolveu materiais publicitários, peças impressas e fez manutenção do site da empresa.\n\nTeve o primeiro contato com princípios de POO aplicados ao JavaScript.\n\nColaborou com equipes de marketing para alinhar estratégias de design aos objetivos de negócios."
     },
@@ -83,7 +83,7 @@ export default function Timeline() {
 
 
     return <>
-        <div className={`mt-[3vw] lg:mt-0 !transition-[0.2s] relative w-full overflow-hidden flex justify-center`}>
+        <div className={`mt-[3vw] mb-[20vw] lg:mb-[0vw] lg:mt-0 !transition-[0.2s] relative w-full overflow-hidden flex justify-center`}>
             <div className={`!transition-[0.2s] justify-start flex flex-col items-start  max-w-full pt-[2vw]   pb-[7vw] ${!expanded ? `h-[60vh] lg:h-[40vw] overflow-hidden` : `h-auto`}`}>
                 {timeline.map((item, i) =>
                     <TimelineItem

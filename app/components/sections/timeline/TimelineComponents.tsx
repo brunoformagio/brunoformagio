@@ -1,5 +1,7 @@
 "use client";
+import { useState } from "react";
 import { useMainContext } from "../../context/mainContext";
+import { Button } from "../../layout/Button";
 
 export interface TimelineItemProps {
     legend?: string;
@@ -37,6 +39,8 @@ const TimelineItemLineArea = ({ children}: { children: any }) => <div className=
 // }
 
 const RenderDescription = ({ title, legend, description, stacks, detailedMode }: { title:string, legend?:string, description:string, stacks:string[],  detailedMode:boolean }) => {
+    const [showDescription, setShowDescription] = useState(false);
+    
     return <div className="flex flex-col items-start justify-start w-full text-left px-[2vw]">
         <div className="text-[3vw] lg:text-[1vw] font-bold">
             <div>{<span className="opacity-75 font-regular text-[2.5vw] lg:text-[0.75vw] italic ">{legend}</span>}
@@ -44,8 +48,11 @@ const RenderDescription = ({ title, legend, description, stacks, detailedMode }:
             </div>
         </div>
         {/* <RenderStacks stacks={stacks} /> */}
-
-    <span className={`text-[3vw] lg:text-[0.8vw]`}>{description}</span>
+    <div className={`${showDescription ? `grid-rows-[1fr]  ` : `grid-rows-[0fr] lg:grid-rows-[1fr]`} grid  duration-500 overflow-hidden text-[3vw] lg:text-[0.8vw] relative   w-full`}><div className={`w-full overflow-hidden`}>{description}</div></div>
+    <div className={`lg:hidden inline-flex mt-[2vw]`}>
+    <Button onClick={() => setShowDescription(!showDescription)} solidButton={showDescription}>{showDescription ? "[-] Hide" : "[+] Show"} description</Button>
+    </div>
+       
         </div>            
 
 }

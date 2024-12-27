@@ -17,7 +17,9 @@ const SkillsContainer = ({ children }: { children: any }) => {
 
     return <div className=" relative lg:h-auto max-w-full w-[80vw] mt-[1.4vw]">
         <div className="relative gap-[2vw] h-[37vw] lg:h-auto max-w-full w-[80vw]  lg:gap-[1vw]  overflow-y-hidden overflow-x-auto flex lg:grid lg:grid-cols-4 " onScroll={handleScroll}>{children}</div>
-        <span className={`${scrolledMaxRight ? `lg:hidden block` : `hidden`} fadeIn absolute top-0 -right-[1px] w-[10vw] h-[calc(100%-7vw)]  flex items-center justify-center bg-gradient-to-l from-black/100 to-black/0`}><span className="!rotate-90 relative w-[10vw] h-[10vw] "><ChevronUpIcon className=" animate-bounce " /></span></span>
+        <span className={`${scrolledMaxRight ? `lg:hidden block` : `hidden`} fadeIn absolute top-0 -right-[1px] w-[10vw] h-[calc(100%-7vw)]  flex items-center justify-center bg-gradient-to-l from-black/100 to-black/0`}>
+        {/* <span className="!rotate-90 relative w-[10vw] h-[10vw] "><ChevronUpIcon className=" animate-bounce " /></span> */}
+        </span>
     </div>
 }
 

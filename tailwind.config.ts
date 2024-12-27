@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        "animate-height-open": "1fr",
+        "animate-height-closed": "0fr",
+      },
       fontFamily: {
         sans: ['var(--font-montserrat)'],
       },

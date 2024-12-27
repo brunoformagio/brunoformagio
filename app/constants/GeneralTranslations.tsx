@@ -28,9 +28,9 @@ export const GeneralTranslations = {
       "en-US": "show more",
       "pt-BR": "mostrar mais"
     },
-    {
-      "en-US": "STACK",
-      "pt-BR": "TECNOLOGIAS"
+    { 
+      "en-US": "SKILLS",
+      "pt-BR": "HABILIDADES"
     },
     {
         "en-US": "Specialized in building solutions focused on usability and scalability, always seeking the best possible experience for the user.",
