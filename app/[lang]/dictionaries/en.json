@@ -1,0 +1,43 @@
+{
+  "settings": 
+    {
+      "presentation": "Hey! It seems like you have a more technical profile than most users. Just so you know, this web app was built with React.js using Typescript, Next.js, TailwindCSS, Heroicons, and a few more magical dependencies. If you have any questions, hit me up on Linkedin and I'll explain everything to you! 😄 https://www.linkedin.com/in/brunoformagio/"
+  },
+  "nav": {
+    "Intro": "Intro",
+    "Skills": "Skills",
+    "Timeline": "Timeline",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact"
+  },
+  "home": {
+    "presentation": "Hi, I'm Bruno, a",
+    "headline_up": "FRONTEND",
+    "headline_down": "ENGINEER",
+    "subtitle": "with 15+ years of experience of web development and design",
+    "subtitle_expanded": "Specialized in building solutions focused on usability and scalability, always seeking the best possible experience for the user.",
+    "show less": "show less",
+    "show more": "show more",
+    "Resume (PDF)": "Resume (PDF)"
+  },
+  "skills": {
+    "code": "code",
+    "design": "design",
+    "Development Principles": "Development Principles",
+    "Design Principles": "Design Principles",
+    "Core Principles": "Core Principles",
+    "Unit Tests": "Unit Tests",
+    "coverage": "coverage",
+    "Branching": "Branching",
+    "Documentation": "Documentation",
+    "Code & Design": "Code & Design",
+    "years": "years",
+    "Atomic Design": "Atomic Design",
+    "Scalable UI": "Scalable UI",
+    "Prototyping": "Prototyping",
+    "Responsive": "Responsive",
+    "Design Mindset": "Design Mindset",
+    "Minimalism": "Minimalism",
+    "Less is more": "Less is more"
+  }
+}

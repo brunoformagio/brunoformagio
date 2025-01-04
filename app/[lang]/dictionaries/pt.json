@@ -1,0 +1,42 @@
+{
+  "settings":{
+    "presentation": "Opa! Me parece que você tem um perfil mais técnico que a maioria dos usuários. Só pra você saber, esse web app foi construído com React.js usando Typescript, Next.js, TailwindCSS, Heroicons, e mais algumas dependências mágicas. Se tiver alguma dúvida, me chama no Linkedin que eu te explico tudo! 😄 https://www.linkedin.com/in/brunoformagio/"
+  },
+  "nav": {
+    "Intro": "Intro",
+    "Skills": "Habilidades",
+    "Timeline": "Timeline",
+    "Portfolio": "Portfólio",
+    "Contact": "Contato"
+  },
+  "home": {
+    "presentation": "Olá! Sou Bruno, um",
+    "headline_up": "ENGENHEIRO",
+    "headline_down": "FRONTEND",
+    "subtitle": "com mais de 15 anos de experiência em desenvolvimento e design para web.",
+    "subtitle_expanded": "Especializado em construir soluções focadas na usabilidade e escalabilidade, sempre buscando a melhor experiência possível para o usuário.",
+    "show less": "mostrar menos",
+    "show more": "mostrar mais",
+    "Resume (PDF)": "Currículo (PDF)"
+  },
+  "skills": {
+    "code": "código",
+    "design": "design",
+    "Development Principles": "Princípios de Desenvolvimento",
+    "Design Principles": "Princípios de Design",
+    "Core Principles": "Princípios Fundamentais",
+    "Unit Tests": "Testes Unitários",
+    "coverage": "cobertura",
+    "Branching": "Branching",
+    "Documentation": "Documentação",
+    "Code & Design": "Código & Design",
+    "years": "anos",
+    "Atomic Design": "Atomic Design",
+    "Scalable UI": "UI Escalável",
+    "Prototyping": "Prototipagem",
+    "Responsive": "Responsividade",
+    "Design Mindset": "Design Mindset",
+    "Minimalism": "Minimalismo",
+    "Less is more": "Menos é mais"
+  }
+}
