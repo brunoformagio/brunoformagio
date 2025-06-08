@@ -46,7 +46,13 @@ export default function PortfolioSection() {
         },
     ];
 
-    const PortfolioElement = useMemo( () => ({ title, role, image_url, url, fullImage }: PortfolioProps) => {
+    const renderPortfolioElement = useMemo(() => {
+        return LINKS.map((link, i) => (
+            <PortfolioElement key={i} {...link} />
+        ));
+    }, [language]);
+
+    const PortfolioElement =({ title, role, image_url, url, fullImage }: PortfolioProps) => {
         const [fullImageUrl, setFullImageUrl] = useState<string | null>(null);
 
         return (
@@ -71,14 +77,12 @@ export default function PortfolioSection() {
             <ImageLightbox image={fullImageUrl} onClose={()=> setFullImageUrl(null)} />}
             </>
         );
-    }, [language]);
+    };
 
     return (
         <>
             <div className="grid  lg:grid-cols-3 gap-[1vw] mt-[1vw]">
-                {LINKS.map((link, i) => (
-                    <PortfolioElement key={i} {...link} />
-                ))}
+                {renderPortfolioElement}
             </div>
         </>
     );
