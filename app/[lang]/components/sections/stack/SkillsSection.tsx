@@ -16,8 +16,8 @@ import { useMainContext } from "../../context/mainContext";
 
 const SkillsContainer = ({ children }: { children: any }) => {
   return (
-    <div className=" relative h-auto max-w-full w-[80vw] my-[1.4vw]">
-      <div className="relative gap-[2vw] h-auto lg:gap-[1vw] grid grid-cols-3 lg:grid-cols-4 ">
+    <div className=" relative  max-w-full w-[80vw] my-[1.4vw]">
+      <div className="relative gap-[2vw]  lg:gap-[1vw] grid grid-cols-3 lg:grid-cols-4 ">
         {children}
       </div>
     </div>
@@ -28,7 +28,7 @@ export default function SkillsSection() {
   const { dict, skillSection } = useMainContext();
 
   return (
-    <div className="mt-[1vw] overflow-hidden w-full">
+    <div className="mt-[1vw]  overflow-hidden w-full ">
       {/* Tools or Technologies */}
       <SkillsContainer>
         {skillSection === "code" && (

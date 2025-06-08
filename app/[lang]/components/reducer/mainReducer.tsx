@@ -44,7 +44,7 @@ export const MainStateInitialValues: MainSectionStateProps = {
     language: "en",
     section: "start",
     dict: {},
-    skillSection: "code"
+    skillSection: "principles"
 
 };
 

@@ -19,7 +19,7 @@ export const Sidebar = () => {
                 <ThemeSwitcher />
                 <LanguageSelector />
             </div>
-            {<div className={`${section === "start" ? `fadeIn` : `fadeOut opacity-0`} flex flex-col items-end gap-[3vw] lg:gap-[1vw] `}>
+            {<div className={`${section === "start" ? `fadeIn` : `fadeOut opacity-0 hidden`} flex flex-col items-end gap-[3vw] lg:gap-[1vw] `}>
             <Button onClick={() => handleDownloadCV()} solidButton>{dict.home["Resume (PDF)"]} <ArrowDownTrayIcon className="w-[3vw] lg:w-[1vw]" /></Button>
             <div className="flex lg:flex-col gap-[3vw] lg:gap-[1vw]">
                 <Button onClick={() => window.open("https://www.linkedin.com/in/brunoformagio/", "_blank")} solidButton>

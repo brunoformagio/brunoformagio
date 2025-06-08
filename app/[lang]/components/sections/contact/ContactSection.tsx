@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { EnvelopeIcon, Square2StackIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "next-themes";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
@@ -74,12 +74,16 @@ export default function ContactSection() {
         );
     };
 
+    const renderLinkElement = useMemo(() => {
+        return LINKS.map((link, i) => (
+            <LinkElement key={i} {...link} />
+        ));
+    }, [language]);
+
     return (
         <>
             <div className="flex flex-col gap-[1vw] mt-[1vw]">
-                {LINKS.map((link, i) => (
-                    <LinkElement key={i} {...link} />
-                ))}
+                {renderLinkElement}
             </div>
         </>
     );

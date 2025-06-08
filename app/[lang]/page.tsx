@@ -20,25 +20,27 @@ export default  function Home() {
         </SiteSection>
 
         {/* SKILLS */}
-        <SiteSection id="skills">
+        <SiteSection id="skills" className="h-full pt-[8vh]  !justify-start">
         <SectionTitle title={dict.nav["Skills"]} />
           <StackSection/>
         </SiteSection>
 
         {/* TIMELINE */}
-        <SiteSection id="timeline">
+        <SiteSection id="timeline" className="h-full pt-[8vh]  !justify-start">
         <SectionTitle title={dict.nav["Timeline"]} />
           <TimelineSection/>
         </SiteSection>
 
         {/* PORTFOLIO */}
-        <SiteSection id="portfolio">
+        <div>
+        <SiteSection id="portfolio" className="h-full pt-[8vh]  !justify-start">
         <SectionTitle title={dict.nav["Portfolio"]} />
           <PortfolioSection/>
         </SiteSection>
+        </div>
 
         {/* CONTACT */}
-        <SiteSection id="contact">
+        <SiteSection id="contact" className="h-full pt-[8vh]  !justify-start">
           <SectionTitle title={dict.nav["Contact"]} />
          <ContactSection/>
         </SiteSection>

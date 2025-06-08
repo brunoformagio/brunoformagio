@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { useMainContext } from "../../context/mainContext";
 import { Button } from "../../layout/Button";
@@ -46,12 +46,12 @@ export default function PortfolioSection() {
         },
     ];
 
-    const PortfolioElement = ({ title, role, image_url, url, fullImage }: PortfolioProps) => {
+    const PortfolioElement = useMemo( () => ({ title, role, image_url, url, fullImage }: PortfolioProps) => {
         const [fullImageUrl, setFullImageUrl] = useState<string | null>(null);
 
         return (
             <>
-            <div className="group border w-full h-[52vw] lg:h-[14vw] dark:border-white/20  bg-contain bg-center bg-no-repeat" style={{backgroundImage:`url(${image_url})`}} >
+            <div className="group border w-full h-[52vw] lg:h-[14vw] dark:border-white/20  bg-cover bg-top-center bg-no-repeat" style={{backgroundImage:`url(${image_url})`}} >
                 <div className="dark:bg-black/30  bg-white/90 backdrop-blur-lg p-[2vw] group-hover:flex hidden text-[1vw] h-full transition-[0.2s] items-center justify-center text-center w-full gap-[1vw] ">
                     <div className="flex flex-col gap-[0.8vw] text-[4vw] lg:text-[1vw] lg:leading-[0.9vw]">
                         <span className="font-bold">{title}</span>
@@ -71,7 +71,7 @@ export default function PortfolioSection() {
             <ImageLightbox image={fullImageUrl} onClose={()=> setFullImageUrl(null)} />}
             </>
         );
-    };
+    }, [language]);
 
     return (
         <>

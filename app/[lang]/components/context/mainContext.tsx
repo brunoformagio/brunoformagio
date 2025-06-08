@@ -8,6 +8,7 @@ const context = createContext<MainResultProps>({
   setSection: () => {},
   setLanguage: () => {},
   setDict: () => {},
+  setSkillSection: () => {},
 });
 
 export const useMainContext = () =>
