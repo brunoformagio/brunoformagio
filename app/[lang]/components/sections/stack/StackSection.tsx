@@ -2,17 +2,15 @@
 import React from "react";
 import SkillsSection from "../stack/SkillsSection";
 import { SubSectionTabs } from "../../layout/SubSectionTabs";
+import { useMainContext } from "../../context/mainContext";
 
 export default function StackSection() {
-    const [subSection, setSubSection] = React.useState<"code" | "design">("code");
+    const { skillSection, setSkillSection } = useMainContext();
 
     return <>
         <SubSectionTabs
-            sections={["code", "design"]}
-            subSection={subSection}
-            setSubSection={setSubSection}
         />
         {/* <PrinciplesSection subSection={subSection} /> */}
-        <SkillsSection subSection={subSection} />
+        <SkillsSection/>
     </>
 }

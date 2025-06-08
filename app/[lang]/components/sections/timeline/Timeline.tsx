@@ -6,7 +6,14 @@ import { useMainContext } from "../../context/mainContext";
 
 const TIMELINE_ITEMS: TimelineItemProps[] = [
     {
-        "legend": "2023 - Present",
+        "legend": "2025 - Present",
+        "titleEn": "Frontend Engineer  • Nuvia (AI Startup)",
+        "titleBr": "Frontend Engineer  • Nuvia (Startup de IA)",
+        "descriptionEn": "Working on the frontend of the company's AI platform, helping to build the product and the design system.",
+        "descriptionBr": "Trabalhando no frontend da plataforma de IA da empresa, ajudando a construir o produto e o sistema de design.",
+    },
+    {
+        "legend": "2023 - 2025",
         "titleEn": "Tech Lead (Frontend)  • Bren (AI Startup)",
         "titleBr": "Tech Lead (Frontend)  • Bren (Startup de IA)",
         "descriptionEn": "Led the frontend development of the company's AI platform, planing the architecture and mentoring a small team of developers and a UX designer.\n\nPlanned and executed a scalable frontend structure using Next.js and Tailwind CSS.\n\nOptimized performance, reducing TTFB by 30% and improving LCP by 25%.",

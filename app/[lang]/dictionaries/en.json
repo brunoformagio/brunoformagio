@@ -23,6 +23,8 @@
   "skills": {
     "code": "code",
     "design": "design",
+    "api": "api",
+    "principles": "principles",
     "Development Principles": "Development Principles",
     "Design Principles": "Design Principles",
     "Core Principles": "Core Principles",

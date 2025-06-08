@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useReducer } from 'react';
 import { useParams } from 'next/navigation';
+import { SkillSection } from '../types';
 
 export interface MainResultProps
     extends MainSectionStateProps {
@@ -8,6 +9,7 @@ export interface MainResultProps
     setSection: (section: string) => void;
     setLanguage: (language: string) => void;
     setDict: (dict: any) => void;
+    setSkillSection: (skillSection: SkillSection) => void;
 }
 export enum MainLoadingState {
     FIRST_LOAD,
@@ -21,6 +23,7 @@ export interface MainSectionStateProps {
     language: "en" | "pt";
     dict: any;
     section: "start" | "skills" | "timeline" | "portfolio" | "contact";
+    skillSection: SkillSection;
 
 }
 export interface AccountCreditsMainActionProps {
@@ -32,6 +35,7 @@ export enum MainActionType {
     SET_LANGUAGE,
     SET_SECTION,
     SET_DICT,
+    SET_SKILL_SECTION,
 }
 
 
@@ -39,7 +43,8 @@ export const MainStateInitialValues: MainSectionStateProps = {
     loadingState: MainLoadingState.FIRST_LOAD,
     language: "en",
     section: "start",
-    dict: {}
+    dict: {},
+    skillSection: "code"
 
 };
 
@@ -56,6 +61,8 @@ const reducer = (
             return { ...state, section: action.payload };
         case MainActionType.SET_DICT:
             return { ...state, dict: action.payload };
+        case MainActionType.SET_SKILL_SECTION:
+            return { ...state, skillSection: action.payload };
         default:
             return state;
     }
@@ -102,6 +109,13 @@ export default function useMainReducer(): MainResultProps {
         });
     }
 
+    const setSkillSection = (skillSection: SkillSection) => {
+        dispatch({
+            type: MainActionType.SET_SKILL_SECTION,
+            payload: skillSection,
+        });
+    }
+
 
     /* First Load */
     useEffect(() => {
@@ -114,6 +128,7 @@ export default function useMainReducer(): MainResultProps {
         setLoadingState,
         setLanguage,
         setSection,
-        setDict
+        setDict,
+        setSkillSection
     };
 }
