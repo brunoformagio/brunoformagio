@@ -1,9 +1,7 @@
 "use client"
-import React, { useMemo, useState } from "react";
-import { useTheme } from "next-themes";
+import React, { useEffect, useMemo, useState } from "react";
 import { useMainContext } from "../../context/mainContext";
 import { Button } from "../../layout/Button";
-import { ArrowUpTrayIcon } from "@heroicons/react/20/solid";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import { ImageLightbox } from "../../layout/ImageLightbox";
 
@@ -17,6 +15,11 @@ interface PortfolioProps {
 
 export default function PortfolioSection() {
     const { language } = useMainContext();
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const LINKS: PortfolioProps[] = [
         {
@@ -47,9 +50,9 @@ export default function PortfolioSection() {
     ];
 
     const renderPortfolioElement = useMemo(() => {
-        return LINKS.map((link, i) => (
+        return isMounted ? LINKS.map((link, i) => (
             <PortfolioElement key={i} {...link} />
-        ));
+        )) : null;
     }, [language]);
 
     const PortfolioElement =({ title, role, image_url, url, fullImage }: PortfolioProps) => {
